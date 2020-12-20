@@ -1,0 +1,82 @@
+/* styling for nav bar */
+body {
+    margin: 0;
+    background: rgb(34, 34, 34);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #55d6aa;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+h1 {
+    background: #55d6aa;
+    float: left;
+    padding: 10px 0;
+}
+
+.w3-bar {
+    background: #55d6aa;
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    
+    position: relative;
+}
+
+nav li a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav li a:hover {
+    color: #000;
+}
+
+nav li a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav li a:hover::before {
+    width: 100%;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    nav li {
+      float: none;
+      width: 100%;
+    }
+  }

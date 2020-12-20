@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+</head>
+
+<body>
+    <header>
+
+        <h1>Kim Stevenson</h1>
+        
+        <!--Nav Bar-->
+        
+        <div class="w3-bar">
+            <a href="index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="index.html" class="w3-bar-item w3-button w3-hide-small">About Me</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-hide-small">Contact Me</a>
+            <a href="portfolio.html" class="w3-bar-item w3-button w3-hide-small">Portfolio</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+          </div>
+          
+          <div id="MyNav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+            <a href="index.html" class="w3-bar-item w3-button">About Me</a>
+            <a href="contact.html" class="w3-bar-item w3-button">Contact Me</a>
+            <a href="portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
+          </div>
+    </header>
+
+    <article class="container">
+
+        <!--Portfolio assets-->
+        <section id="Portfolio">
+
+            
+
+        </section>
+
+    </article>
+    
+    <script>
+        function myFunction() {
+          var x = document.getElementById("MyNav");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+    </script>
+
+
+</body>
+
+</html>
