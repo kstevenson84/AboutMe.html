@@ -28,3 +28,7 @@ section {
     margin-left: 20px;
     padding: 30ppx;
 }
+img {
+    width: 400px;
+    margin: 50px;
+}
